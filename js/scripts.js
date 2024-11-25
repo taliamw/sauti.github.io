@@ -52,3 +52,18 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+const typingElement = document.querySelector(".typing-effect");
+
+// Function to reset animation
+function restartTypingEffect() {
+    typingElement.style.animation = "none"; // Stop the current animation
+    setTimeout(() => {
+        typingElement.style.animation = "typing 2s steps(5, end), blink-caret 0.5s step-end infinite";
+    }, 10); // Add a slight delay before restarting
+}
+
+// Automatic restart every 10 seconds
+setInterval(() => {
+    restartTypingEffect(); // Refresh the effect every 10 seconds
+}, 10000); // 10,000 milliseconds = 10 seconds
