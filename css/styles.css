@@ -11423,6 +11423,8 @@ header.masthead .masthead-heading {
   width: 14rem;
   height: 14rem;
   border: 0.5rem solid rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  object-position: center;
 }
 .team-member h4, .team-member .h4 {
   margin-top: 1.5rem;
@@ -11440,7 +11442,7 @@ section#contact {
   background-position: center;
 }
 section#contact .section-heading {
-  color: #fff;
+  color: #000;
 }
 section#contact form#contactForm .form-group {
   margin-bottom: 1.5rem;
